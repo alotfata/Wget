@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+import urllib
+import urllib.request
+import wget
+import pandas as pd
+s = pd.read_csv("/Users/aynaz/Desktop/f.csv")
+for rows in s["urls"]:
+    wget.download(rows, out="/Users/aynaz/Desktop")
+    
+    
+    
+    
+
+#urls.values.tolist()
+#wget.download(urls, out="/Users/aynaz/Desktop")
